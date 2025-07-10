@@ -1,0 +1,22 @@
+[
+  { "name": "Anjali", "student_id": "S101", "class": "class1" },
+  { "name": "Ravi", "student_id": "S102", "class": "class1" },
+  { "name": "Sneha", "student_id": "S103", "class": "class2" },
+  { "name": "Arjun", "student_id": "S104", "class": "class2" },
+  { "name": "Divya", "student_id": "S105", "class": "class3" },
+  { "name": "Kiran", "student_id": "S106", "class": "class3" },
+  { "name": "Meena", "student_id": "S107", "class": "class4" },
+  { "name": "Suresh", "student_id": "S108", "class": "class4" },
+  { "name": "Lakshmi", "student_id": "S109", "class": "class5" },
+  { "name": "Naveen", "student_id": "S110", "class": "class5" },
+  { "name": "Deepa", "student_id": "S111", "class": "class6" },
+  { "name": "Manoj", "student_id": "S112", "class": "class6" },
+  { "name": "Ritika", "student_id": "S113", "class": "class7" },
+  { "name": "Rahul", "student_id": "S114", "class": "class7" },
+  { "name": "Shruti", "student_id": "S115", "class": "class8" },
+  { "name": "Vikram", "student_id": "S116", "class": "class8" },
+  { "name": "Harsha", "student_id": "S117", "class": "class9" },
+  { "name": "Keerthi", "student_id": "S118", "class": "class9" },
+  { "name": "Mahesh", "student_id": "S119", "class": "class10" },
+  { "name": "Pooja", "student_id": "S120", "class": "class10" }
+]
