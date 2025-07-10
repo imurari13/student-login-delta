@@ -18,5 +18,6 @@
   { "name": "Harsha", "student_id": "S117", "class": "class9" },
   { "name": "Keerthi", "student_id": "S118", "class": "class9" },
   { "name": "Mahesh", "student_id": "S119", "class": "class10" },
-  { "name": "Pooja", "student_id": "S120", "class": "class10" }
+  { "name": "Pooja", "student_id": "S120", "class": "class10" },
+  { "name": "Poja", "student_id": "S120", "class": "class10" }
 ]
