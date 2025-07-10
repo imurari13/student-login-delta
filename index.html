@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delta Rev Tech - Student Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <img src="logo.png.png" alt="Delta Rev Tech Logo" class="logo" />
+    <a href="https://www.deltapublications.in" class="website-link" target="_blank">Visit Main Website</a>
+  </header>
+
+  <!-- MAIN LOGIN CONTAINER -->
+  <div class="container glass">
+    <h2>🔐 Student Login</h2>
+    <form id="loginForm">
+      <input type="text" id="name" placeholder="Enter Name" required />
+      <input type="text" id="student_id" placeholder="Enter Student ID" required />
+      <select id="student_class" required>
+        <option value="" disabled selected>Select Class</option>
+        <option value="class1">Class 1</option>
+        <option value="class2">Class 2</option>
+        <option value="class3">Class 3</option>
+        <option value="class4">Class 4</option>
+        <option value="class5">Class 5</option>
+        <option value="class6">Class 6</option>
+        <option value="class7">Class 7</option>
+        <option value="class8">Class 8</option>
+        <option value="class9">Class 9</option>
+        <option value="class10">Class 10</option>
+      </select>
+      <button type="submit">Login</button>
+    </form>
+    <div id="errorMessage"></div>
+  </div>
+
+  <script>
+    const redirectMap = {
+      class1: "https://1stclass.deltapublications.in/",
+      class2: "https://2ndclass.deltapublications.in/",
+      class3: "https://3rdclass.deltapublications.in/",
+      class4: "https://4thclass.deltapublications.in/",
+      class5: "https://5thclass.deltapublications.in/",
+      class6: "https://6thclass.deltapublications.in/",
+      class7: "https://7thclass.deltapublications.in/",
+      class8: "https://8thclass.deltapublications.in/",
+      class9: "https://9thclass.deltapublications.in/",
+      class10: "https://10thclass.deltapublications.in/"
+    };
+
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const student_id = document.getElementById("student_id").value.trim();
+      const student_class = document.getElementById("student_class").value;
+
+      fetch("students.json")
+        .then(res => res.json())
+        .then(data => {
+          const matched = data.find(s =>
+            s.name.toLowerCase() === name.toLowerCase() &&
+            s.student_id === student_id &&
+            s.class === student_class
+          );
+
+          if (matched) {
+            window.location.href = redirectMap[student_class];
+          } else {
+            document.getElementById("errorMessage").innerHTML =
+              `<div class="error-box">❌ Incorrect details. Please try again.</div>`;
+          }
+        })
+        .catch(err => {
+          document.getElementById("errorMessage").innerHTML =
+            `<div class="error-box">⚠️ Failed to load student data</div>`;
+        });
+    });
+  </script>
+
+</body>
+</html>
