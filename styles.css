@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ body {
   padding: 0;
 }
 
-/* Header */
+
 .topbar {
   width: 100%;
   background: rgba(255, 255, 255, 0.95);
@@ -54,7 +54,7 @@ body {
   color: #4e54c8;
 }
 
-/* Main Card */
+
 .split-card {
   display: flex;
   flex-wrap: wrap;
@@ -131,7 +131,7 @@ body {
   font-weight: 600;
 }
 
-/* Stats */
+
 .stats-bar {
   background: #4e54c8;
   color: #fff;
@@ -146,7 +146,7 @@ body {
   left: 0;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .topbar {
     flex-direction: column;
