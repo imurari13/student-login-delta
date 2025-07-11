@@ -33,6 +33,17 @@ body {
   box-shadow: 0 4px 10px rgba(255, 182, 193, 0.2);
 }
 
+.brand-name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff69b4;
+  letter-spacing: 1px;
+}
+
+
 .logo {
   height: 48px;
 }
