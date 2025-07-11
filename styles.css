@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #fdfbfb, #ebedee), url("bg-students.png") no-repeat center center fixed;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee), url(Untitled design(19).png") no-repeat center center fixed;
   background-blend-mode: overlay;
   background-size: cover;
   min-height: 100vh;
