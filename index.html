@@ -4,41 +4,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
   <title>Delta Rev Tech - Student Login</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  
+  <!-- Header -->
   <header class="topbar">
-  <img src="logo.png.png" alt="Delta Rev Tech Logo" class="logo" />
-  <div class="brand-name">Delta Rev Tech</div>
-  <a href="https://www.deltapublications.in" class="website-link" target="_blank">Visit Main Website</a>
-</header>
+    <div class="left-header">
+      <img src="logo.png.png" alt="Logo" class="logo">
+      <span class="brand-text">Delta Rev Tech</span>
+    </div>
+    <a href="https://www.deltapublications.in" target="_blank" class="visit-site">Visit Website</a>
+  </header>
 
-  <!-- MAIN LOGIN CONTAINER -->
-  <div class="container glass">
-    <h2> Student Login</h2>
-    <form id="loginForm">
-      <input type="text" id="name" placeholder="Enter Name" required />
-      <input type="text" id="student_id" placeholder="Enter Student ID" required />
-      <select id="student_class" required>
-        <option value="" disabled selected>Select Class</option>
-        <option value="class1">Class 1</option>
-        <option value="class2">Class 2</option>
-        <option value="class3">Class 3</option>
-        <option value="class4">Class 4</option>
-        <option value="class5">Class 5</option>
-        <option value="class6">Class 6</option>
-        <option value="class7">Class 7</option>
-        <option value="class8">Class 8</option>
-        <option value="class9">Class 9</option>
-        <option value="class10">Class 10</option>
-      </select>
-      <button type="submit">Login</button>
-    </form>
-    <div id="errorMessage"></div>
+  <!-- Main Container -->
+  <div class="split-card">
+    <!-- Login Section -->
+    <div class="split-left">
+      <h2>Student Login</h2>
+      <form id="loginForm">
+        <input type="text" id="name" placeholder="Enter Name" required />
+        <input type="text" id="student_id" placeholder="Enter Student ID" required />
+        <select id="student_class" required>
+          <option value="" disabled selected>Select Class</option>
+          <option value="class1">Class 1</option>
+          <option value="class2">Class 2</option>
+          <option value="class3">Class 3</option>
+          <option value="class4">Class 4</option>
+          <option value="class5">Class 5</option>
+          <option value="class6">Class 6</option>
+          <option value="class7">Class 7</option>
+          <option value="class8">Class 8</option>
+          <option value="class9">Class 9</option>
+          <option value="class10">Class 10</option>
+        </select>
+        <button type="submit">Login</button>
+      </form>
+      <div id="errorMessage"></div>
+    </div>
+
+    <!-- About Section -->
+    <div class="split-right">
+      <h2>About Delta Rev Tech</h2>
+      <p>Delta Rev Tech is a next-gen educational platform helping students from Class 1 to 10 connect, learn, and grow.</p>
+      <p>Our digital tools provide personalized access, smart learning, and seamless integration with schools.</p>
+      <a href="https://www.deltapublications.in" class="learn-more" target="_blank">Learn More →</a>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-bar">
+    🎓 We are associated with <strong>150+ schools</strong> and over <strong>1000+ students</strong> learning through Delta Rev Tech.
   </div>
 
   <script>
