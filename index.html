@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Delta Rev Tech - Student Login</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Top Navigation Bar -->
   <header class="topbar">
     <div class="left-header">
-      <img src="logo.png.png" alt="Logo" class="logo">
+      <img src="logo.png" alt="Logo" class="logo">
       <span class="brand-text">Delta Rev Tech</span>
     </div>
     <a href="https://www.deltapublications.in" target="_blank" class="visit-site">Visit Website</a>
   </header>
 
-  <!-- Main Container -->
+  <!-- Main Split Container -->
   <div class="split-card">
-    <!-- Login Section -->
+    <!-- Left: Login Form -->
     <div class="split-left">
       <h2>Student Login</h2>
       <form id="loginForm">
@@ -44,7 +45,7 @@
       <div id="errorMessage"></div>
     </div>
 
-    <!-- About Section -->
+    <!-- Right: Info Section -->
     <div class="split-right">
       <h2>About Delta Rev Tech</h2>
       <p>Delta Rev Tech is a next-gen educational platform helping students from Class 1 to 10 connect, learn, and grow.</p>
@@ -53,11 +54,12 @@
     </div>
   </div>
 
-  <!-- Stats -->
+  <!-- Footer Stats Bar -->
   <div class="stats-bar">
     🎓 We are associated with <strong>150+ schools</strong> and over <strong>1000+ students</strong> learning through Delta Rev Tech.
   </div>
 
+  <!-- JavaScript for Form Handling -->
   <script>
     const redirectMap = {
       class1: "https://1stclass.deltapublications.in/",
@@ -74,6 +76,7 @@
 
     document.getElementById("loginForm").addEventListener("submit", function (e) {
       e.preventDefault();
+
       const name = document.getElementById("name").value.trim();
       const student_id = document.getElementById("student_id").value.trim();
       const student_class = document.getElementById("student_class").value;
