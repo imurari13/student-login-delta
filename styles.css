@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-  background:  url("Untitled design (19).png") no-repeat center center fixed;
+  background: url("Untitled design (19).png") no-repeat center center fixed;
   background-blend-mode: overlay;
   background-size: cover;
   min-height: 100vh;
@@ -18,7 +17,6 @@ body {
   padding: 0;
 }
 
-
 .topbar {
   width: 100%;
   background: rgba(255, 255, 255, 0.95);
@@ -26,7 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   z-index: 100;
@@ -53,9 +51,10 @@ body {
   font-weight: 600;
   color: #4e54c8;
 }
-.visit-site:hover{
-  color:red;
 
+.visit-site:hover {
+  color: red;
+}
 
 .split-card {
   display: flex;
@@ -65,12 +64,13 @@ body {
   width: 95%;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   min-height: 500px;
 }
 
-.split-left, .split-right {
+.split-left,
+.split-right {
   flex: 1 1 400px;
   padding: 40px;
   min-width: 300px;
@@ -133,7 +133,6 @@ body {
   font-weight: 600;
 }
 
-
 .stats-bar {
   background: #4e54c8;
   color: #fff;
@@ -142,12 +141,11 @@ body {
   width: 100%;
   font-size: 1rem;
   text-align: center;
-  box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
   position: fixed;
   bottom: 0;
   left: 0;
 }
-
 
 @media (max-width: 768px) {
   .topbar {
@@ -162,7 +160,8 @@ body {
     margin-top: 120px;
   }
 
-  .split-left, .split-right {
+  .split-left,
+  .split-right {
     padding: 20px;
   }
 
