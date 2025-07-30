@@ -54,7 +54,8 @@ body {
   color: #4e54c8;
 }
 .visit-site:hover{
-  color:green;
+  background: rgba(255, 255, 255, 0.95);
+
 
 .split-card {
   display: flex;
