@@ -53,7 +53,8 @@ body {
   font-weight: 600;
   color: #4e54c8;
 }
-
+.visit-site:hover{
+  color:green;
 
 .split-card {
   display: flex;
